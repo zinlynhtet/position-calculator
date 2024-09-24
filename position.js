@@ -24,6 +24,7 @@ function updateChartTheme() {
 
   pnlChart.update();
 }
+
 function createChart(prices, pnls) {
   const ctx = document.getElementById('pnlChart').getContext('2d');
   pnlChart = new Chart(ctx, {
@@ -175,5 +176,4 @@ form.addEventListener('submit', (e) => {
   calculateAndUpdateChart();
 });
 
-// Initialize the chart with default values when the page loads
 window.addEventListener('load', calculateAndUpdateChart);
